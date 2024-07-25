@@ -6,15 +6,13 @@ https://github.com/user-attachments/assets/ca472ee8-4c1f-4e84-abde-90d3c07c4cb7
 
 Pixelgroove transforms your music videos into dynamic, interactive shooter experiences. The game analyzes the visual elements and rhythms of your videos, creating unique gameplay challenges for each track.
 
-Available On: [Steam](https://store.steampowered.com/app/2871570/Pixelgroove)
-
-
 It uses p5.js with out-of-the-box ML models to do object detection, face recognition and pose estimation (via blaze-face, coco, and posenet). 
 
 
 
 ## [YouTube Video Demo](https://youtu.be/_yfUnCqTTuc?si=khm1DMwF08Fv0SMM)
 [![Video Demo](assets/images/06.jpg)](https://youtu.be/_yfUnCqTTuc?si=khm1DMwF08Fv0SMM)
+Available On: [Steam](https://store.steampowered.com/app/2871570/Pixelgroove)
 
 ## Run: 
 
