@@ -9,21 +9,26 @@ Pixelgroove transforms your music videos into dynamic, interactive shooter exper
 Available On: [Steam](https://store.steampowered.com/app/2871570/Pixelgroove)
 
 
-## Overview
 It uses p5.js with out-of-the-box ML models to do object detection, face recognition and pose estimation (via blaze-face, coco, and posenet). 
 
+
+
+## [YouTube Video Demo](https://youtu.be/_yfUnCqTTuc?si=khm1DMwF08Fv0SMM)
+[![Video Demo](assets/images/06.jpg)](https://youtu.be/_yfUnCqTTuc?si=khm1DMwF08Fv0SMM)
 
 ## Run: 
 
 ### Setup (Configure npm):
 Without this you will keep getting erros related to posenet:
+
 `npm config set legacy-peer-deps true`
+
 You may need to do instlal this way too:
+
 `npm install --legacy-peer-deps`
+
 `npm start`
 
-## [YouTube Video Demo](https://youtu.be/_yfUnCqTTuc?si=khm1DMwF08Fv0SMM)
-[![Video Demo](assets/images/06.jpg)](https://youtu.be/_yfUnCqTTuc?si=khm1DMwF08Fv0SMM)
 
 # Screenshots:
 
