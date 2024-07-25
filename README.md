@@ -1,8 +1,7 @@
 # [Pixelgroove](https://store.steampowered.com/app/2871570/Pixelgroove)
 
 
-
-https://github.com/user-attachments/assets/e3832781-baf9-4aee-aff7-d69fed308f45
+https://github.com/user-attachments/assets/ca472ee8-4c1f-4e84-abde-90d3c07c4cb7
 
 
 
