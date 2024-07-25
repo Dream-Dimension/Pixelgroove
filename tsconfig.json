@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "types": ["jest"],
+    "strict": true,
+    "allowJs": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "skipLibCheck": true
+  },
+  "include": [    
+    "src/types/p5-extensions.d.ts",
+    "src",
+    "src/types/global.d.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
+}

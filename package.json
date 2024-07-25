@@ -1,0 +1,124 @@
+{
+  "name": "Augmented Media",
+  "version": "1.0.0",
+  "author": "Jason AugmentedMedia",
+  "description": "An gaming interactive experience over augmented music videos",
+  "scripts": {
+    "pr-checks": "npm run lint && npm run ts-check && npm run test",
+    "make-docs": "typedoc src --entryPointStrategy expand --readme README.md",
+    "test": "jest",
+    "create-dist": "mkdirp ./dist",
+    "ts-check": "tsc --noEmit -p ./tsconfig.json",
+    "copy-index": "npm run create-dist && node build_scripts/copy_index_html_for_prod.js",
+    "copy-assets": "npm run create-dist && ncp ./assets ./dist/assets",
+    "copy-preload": "npm run create-dist && ncp ./src/preload.js ./dist/preload.js",
+    "clean": "rimraf index.html ./dist",
+    "watch": "webpack --config ./webpack.config.js --watch",
+    "build": "npm run clean && webpack --config ./webpack.config.js && npm run copy-index && npm run copy-assets && npm run copy-preload",
+    "start-electron": "electron ./dist/main.js",
+    "build-start-electron": "npm run build && npm run start-electron",
+    "serve": "npm run copy-preload && npm run copy-assets && wait-on ./dist/main.js ./dist/renderer.js ./dist/index.html ./dist/preload.js && npm run start-electron",
+    "start": "concurrently \"npm run watch\" \"npm run serve\"",
+    "lint": "eslint \"src/**\"",
+    "lint-fix": "eslint \"src/**\" --fix",
+    "package": "electron-forge package",
+    "start-forge": "npm run build && npm run copy-index && electron-forge start",
+    "make": "npm run build && npm run copy-index && electron-forge make",
+    "publish": "npm run build && electron-forge publish"
+  },
+  "keywords": [],
+  "license": "ISC",
+  "devDependencies": {
+    "@electron-forge/cli": "^6.4.2",
+    "@electron-forge/maker-squirrel": "^6.4.2",
+    "@types/jest": "^29.5.8",
+    "@types/lodash": "^4.14.202",
+    "@types/node": "^20.9.1",
+    "@types/p5": "^1.7.2",
+    "@typescript-eslint/eslint-plugin": "^6.10.0",
+    "babel-plugin-transform-async-to-generator": "^6.24.1",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "concurrently": "^8.2.2",
+    "electron-forge": "^5.2.4",
+    "electron-prebuilt-compile": "8.2.0",
+    "electron-reload": "^2.0.0-alpha.1",
+    "eslint": "^8.53.0",
+    "eslint-config-standard-with-typescript": "^39.1.1",
+    "eslint-plugin-import": "^2.29.0",
+    "eslint-plugin-n": "^16.3.0",
+    "eslint-plugin-promise": "^6.1.1",
+    "html-webpack-plugin": "^5.5.3",
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0",
+    "ncp": "^2.0.0",
+    "rimraf": "^5.0.5",
+    "ts-jest": "^29.1.1",
+    "ts-loader": "^9.5.0",
+    "typedoc": "^0.25.3",
+    "typescript": "^5.2.2",
+    "wait-on": "^7.1.0",
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.4"
+  },
+  "dependencies": {
+    "@tensorflow-models/blazeface": "^0.1.0",
+    "@tensorflow-models/coco-ssd": "^2.2.3",
+    "@tensorflow-models/posenet": "^2.2.2",
+    "@tensorflow/tfjs": "^4.13.0",
+    "@tensorflow/tfjs-backend-wasm": "^4.13.0",
+    "@tensorflow/tfjs-backend-webgl": "^4.13.0",
+    "electron": "^27.0.4",
+    "electron-compile": "^6.4.4",
+    "electron-squirrel-startup": "^1.0.0",
+    "i18n-js": "^4.3.2",
+    "jsdom": "^23.0.0",
+    "lodash": "^4.17.21",
+    "mkdirp": "^3.0.1",
+    "p5": "^1.8.0",
+    "reflect-metadata": "^0.1.13",
+    "tsyringe": "^4.8.0"
+  },
+  "main": "dist/main.js",
+  "directories": {
+    "buildResources": "dist",
+    "app": "dist"
+  },
+  "config": {
+    "forge": {
+      "packagerConfig": {
+        "asar": true,
+        "icon": "./assets/icons/icon"
+      },
+      "makers": [
+        {
+          "name": "@electron-forge/maker-squirrel",
+          "config": {
+            "name": "augmented_media"
+          },
+          "platforms": [
+            "win32"
+          ]
+        }
+      ]
+    },
+    "electronPackagerConfig": {
+      "packageManager": "npm",
+      "dir": "./dist",
+      "out": "./out"
+    },
+    "electronWinstallerConfig": {
+      "name": "schmup_incorporating_music_videos"
+    },
+    "electronInstallerDebian": {},
+    "electronInstallerRedhat": {},
+    "github_repository": {
+      "owner": "",
+      "name": ""
+    },
+    "windowsStoreConfig": {
+      "packageName": "",
+      "name": "schmupincorporatingmusicvideos"
+    }
+  }
+}
