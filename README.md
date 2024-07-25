@@ -55,3 +55,11 @@ The ML models, like blaze-face, don't often work as well as one would expect. Co
 ### Node version:
 
 Node: 18.16.1
+
+
+### Credits & Attributions:
+This project incorporates footage/screenshots from the following Creative Commons Music Videos:
+
+Title: NEFFEX - My Way 😤 (Official Music Video) [Copyright Free] No.158, Author: **NEFFEX** 
+Title: Maía - Un Beso De Su Boca (Video Oficial), Author: MAIA MUSICAL
+Title: 李毓芬Tia Lee《是我不夠好Not Good Enough》Official Music Video HD, Author: Passion Sisters【宏將多利安國際股份有限公司
