@@ -10,7 +10,7 @@ Available On: [Steam](https://store.steampowered.com/app/2871570/Pixelgroove)
 ## Overview
 It uses p5.js with out-of-the-box ML models to do object detection, face recognition and pose estimation (via blaze-face, coco, and posenet). 
 
-## (Setup) Configure npm:
+## Setup (Configure npm):
 Without this you will keep getting erros related to posenet:
 
 npm config set legacy-peer-deps true
