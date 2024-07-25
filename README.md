@@ -11,7 +11,7 @@ It uses p5.js with out-of-the-box ML models to do object detection, face recogni
 
 
 ## [YouTube Video Demo:](https://youtu.be/_yfUnCqTTuc?si=khm1DMwF08Fv0SMM)
-[![Video Demo](assets/images/00.png)](https://youtu.be/_yfUnCqTTuc?si=khm1DMwF08Fv0SMM)
+[![Video Demo](assets/images/00.jpg)](https://youtu.be/_yfUnCqTTuc?si=khm1DMwF08Fv0SMM)
 Available On: [Steam](https://store.steampowered.com/app/2871570/Pixelgroove)
 
 ## Run: 
