@@ -14,7 +14,6 @@ class ControlsConfigurator implements IControlsConfigurator {
   private clearConfigBtn: p5.Element | undefined;
 
   private goBackCb: GoBackCb = () => {};
-  // private mappings: {[string]: string} = {};
   private feedBackText: p5.Element | undefined;
   private readonly controllersDetectedText: p5.Element | undefined;
   private upBtn: p5.Element | undefined;
