@@ -21,7 +21,7 @@ Without this you will keep getting erros related to posenet:
 
 `npm config set legacy-peer-deps true`
 
-You may need to do instlal this way too:
+You may need to do install this way too:
 
 `npm install --legacy-peer-deps`
 
